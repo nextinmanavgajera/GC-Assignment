@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Digital Brew</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<header>
+    <nav class="navbar">
+        <div class="nav_logo_container">
+            <a href="index.html">
+                <img src="image/logo.jpg" alt="" width="100%">
+            </a>
+        </div>
+        <ul class="nav-item">
+            <li class="nav_link"><a href="about.html">About</a></li>
+            <li class="nav_link"><a href="location.html">Location</a></li>
+            <li class="nav_link active"><a href="reservation.html">Reservation</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div class="heading-container">
+        <!-- <hr> -->
+        <h1>Book a Table</h1>
+        <hr>
+    </div>
+    <section class="reservation-section">
+        <h2>Reserve Your Spot at <span>The Digital Brew</span></h2>
+        <form class="reservation-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Time</label>
+                <input type="time" id="time" required>
+            </div>
+            <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <select id="guests">
+                    <option>1 Guest</option>
+                    <option>2 Guests</option>
+                    <option>3 Guests</option>
+                    <option>4 Guests</option>
+                    <option>5 Guests</option>
+                    <option>6 Guests</option>
+                    <option>7 Guests</option>
+                    <option>8 Guests</option>
+                    <option>9 Guests</option>
+                    <option>10 Guests</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Preferred Seating</label>
+                <div class="radio-group">
+                    <input type="radio" id="indoor" name="seating" value="Indoor" checked>
+                    <label for="indoor">Indoor</label>
+                    <input type="radio" id="outdoor" name="seating" value="Outdoor">
+                    <label for="outdoor">Outdoor</label>
+                    <input type="radio" id="no-preference" name="seating" value="No Preference">
+                    <label for="no-preference">No Preference</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="requests">Special Requests (Optional)</label>
+                <textarea id="requests"></textarea>
+            </div>
+            <button type="submit">Reserve Now</button>
+        </form>
+    </section>
+
+</body>
+
+</html>
